@@ -1,0 +1,16 @@
+
+@import './base/setting';
+@import './base/base';
+
+//pages
+
+@import './components/pages/homePage';
+@import './components/pages/historialPage';
+@import './components/pages/executivePage';
+@import './components/pages/clientPage';
+
+// abstracts
+
+@import './components/abstracts/svgs';
+@import './components/abstracts/tabletitle';
+@import './components/abstracts/historialCard';

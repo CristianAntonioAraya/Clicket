@@ -1,0 +1,39 @@
+.historial__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+    width: 100%;
+    justify-content: space-between;
+    height: calc( 100vh - 4rem);
+}
+.historial__content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.historial__list{
+    margin-top: 1rem;
+    width: 100%;
+    max-height: calc(100vh - 7rem);
+    overflow: auto; 
+    padding: 0.5rem;
+    background-color: $Light_Color;
+    border-radius: 10px;
+    &::-webkit-scrollbar {
+        width: 10px;
+      }
+    &::-webkit-scrollbar-track {
+        background: $Light_Color;
+        border-radius: 10px;
+
+    }
+      
+    &::-webkit-scrollbar-thumb {
+        background: $Orange_Color;
+    }
+      
+    &::-webkit-scrollbar-thumb:hover {
+        background: darken($color: $Orange_Color, $amount: 10);
+    }
+}

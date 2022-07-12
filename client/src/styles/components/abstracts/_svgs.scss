@@ -1,0 +1,18 @@
+.Svg__Home{
+    position: absolute;
+    bottom: 0;
+    right:0;
+    width: 5rem;
+    fill: $Orange_Color;
+    margin: 2rem;
+    transition: transform .3s ease;
+    cursor: pointer;
+    &:hover{
+        transform: scale(1.1);
+        fill: $Light_Color;
+    }
+}
+.svg__tap{
+    margin-top: 1rem;
+    fill: $Orange_Color;
+}

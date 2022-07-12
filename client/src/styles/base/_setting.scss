@@ -1,0 +1,28 @@
+$DarkBlue_Color: #004E98;
+$LightBlue_Color: #3A6EA5;
+$Light_Color: #EBEBEB;
+$Orange_Color: #FF6700;
+
+$Large_Font: clamp( 30px, 5vw, 60px );
+$Medium_Font: clamp( 20px, 4vw, 30px );
+$Small_Font: clamp( 15px, 3vw, 25px );
+
+$breakpoints: (
+    xs: 320px,
+    sm: 480px,
+    md: 768px,
+    lg: 1024px,
+    xl: 1200px
+);
+
+
+@mixin media-up( $Breakpoint ) {
+    @media screen and ( min-width: map-get( $breakpoints, $Breakpoint )) {
+        @content;
+    }
+}
+@mixin media-down( $Breakpoint) {
+    @media screen and ( max-width: map-get( $breakpoints, $Breakpoint )) {
+        @content;
+    }
+}

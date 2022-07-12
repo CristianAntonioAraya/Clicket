@@ -1,0 +1,84 @@
+.executive__content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5rem;
+    padding: 2rem;
+    h3{
+        color: $Light_Color;
+        font-size: $Large_Font;
+    }
+    form{
+        margin-top: 2rem;
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        background-color: $Light_Color;
+        border-radius: 10px;
+        border: 2px solid $Orange_Color;
+    }
+    
+}
+.executive__label-input{
+    width: 100%; 
+    position: relative;
+    label{
+        font-size: $Small_Font;
+        position: absolute;
+        top: -1rem;
+        left: 1rem;
+        background-color: $Light_Color;
+        color: $DarkBlue_Color;
+    }
+    input{
+        font-size: $Medium_Font;
+        width: 100%;
+        padding: 1rem;
+        background-color: transparent;
+        border: 2px solid $Orange_Color;
+        border-radius: 10px;
+    }
+}
+.executive__container-input{
+    margin: 1rem 0;
+    display: flex;
+    width: 100%;
+    div{
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-right: 1rem;
+        label{
+            font-size: $Small_Font;
+            position: absolute;
+            top: -1rem;
+            left: 0.8rem;
+            background-color: $Light_Color;
+            color: $DarkBlue_Color;
+        }
+        select{
+            background-color: transparent;
+            font-size: $Medium_Font;
+            padding: 1rem 3rem;
+            border: 2px solid $Orange_Color;
+            border-radius: 10px;
+        }
+    }
+    button{
+        width: 100%;
+        font-size: $Medium_Font;
+        font-weight: bold;
+        background-color: $Orange_Color;
+        color: $Light_Color;
+        border-radius: 10px;
+        border: 2px solid $Orange_Color;
+        cursor: pointer;
+        &:hover{
+            background-color: $Light_Color;
+            color: $Orange_Color;
+        }
+    }
+}

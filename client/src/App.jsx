@@ -1,7 +1,8 @@
+import AppRoutes from "./routes/AppRoutes"
 
 const App = () => {
   return (
-    <div>Clicket</div>
+    <AppRoutes/>
   )
 }
 
