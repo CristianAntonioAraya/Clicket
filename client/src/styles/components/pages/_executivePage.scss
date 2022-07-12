@@ -1,84 +1,43 @@
-.executive__content{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
+.executive__title{
+    color: $Light_Color;
+    font-size: $Xl_Font;
     margin-top: 5rem;
-    padding: 2rem;
-    h3{
+}
+.executive__desk{
+    color: $Light_Color;
+    font-size: $Medium_Font;
+}
+.executive__close-icon{
+    cursor: pointer;
+    margin-top: 2rem;
+    display: flex;
+    background-color: $Red_Color;
+    width: max-content;
+    padding: 1rem;
+    border-radius: 20px;
+}
+.executive__arrow-icon{
+    cursor: pointer;
+    display: flex;
+    margin: 10rem 0;
+    border: 5px solid $Light_Color;
+    width: max-content;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    span{
         color: $Light_Color;
         font-size: $Large_Font;
-    }
-    form{
-        margin-top: 2rem;
-        display: flex;
-        width: 50%;
-        flex-direction: column;
-        align-items: center;
-        padding: 2rem;
-        background-color: $Light_Color;
-        border-radius: 10px;
-        border: 2px solid $Orange_Color;
-    }
-    
-}
-.executive__label-input{
-    width: 100%; 
-    position: relative;
-    label{
-        font-size: $Small_Font;
-        position: absolute;
-        top: -1rem;
-        left: 1rem;
-        background-color: $Light_Color;
-        color: $DarkBlue_Color;
-    }
-    input{
-        font-size: $Medium_Font;
-        width: 100%;
-        padding: 1rem;
-        background-color: transparent;
-        border: 2px solid $Orange_Color;
-        border-radius: 10px;
-    }
-}
-.executive__container-input{
-    margin: 1rem 0;
-    display: flex;
-    width: 100%;
-    div{
-        position: relative;
-        display: flex;
-        align-items: center;
-        margin-right: 1rem;
-        label{
-            font-size: $Small_Font;
-            position: absolute;
-            top: -1rem;
-            left: 0.8rem;
-            background-color: $Light_Color;
-            color: $DarkBlue_Color;
-        }
-        select{
-            background-color: transparent;
-            font-size: $Medium_Font;
-            padding: 1rem 3rem;
-            border: 2px solid $Orange_Color;
-            border-radius: 10px;
-        }
-    }
-    button{
-        width: 100%;
-        font-size: $Medium_Font;
         font-weight: bold;
-        background-color: $Orange_Color;
-        color: $Light_Color;
-        border-radius: 10px;
-        border: 2px solid $Orange_Color;
-        cursor: pointer;
-        &:hover{
-            background-color: $Light_Color;
+        margin-right: 0.5rem;
+    }
+    &:hover{
+        background-color: $Light_Color;
+        border-color: $Orange_Color;
+        span{
             color: $Orange_Color;
+        }
+        svg{
+            fill: $Orange_Color;
         }
     }
 }

@@ -11,7 +11,7 @@ const HomePage = () => {
           </Link>
         </li>
         <li className='home__item'>
-          <Link to='/Executive' className='home__link'>
+          <Link to='/Login' className='home__link'>
             Executive
           </Link>
         </li>

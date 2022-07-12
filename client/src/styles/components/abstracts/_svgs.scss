@@ -16,3 +16,19 @@
     margin-top: 1rem;
     fill: $Orange_Color;
 }
+.svg__close{
+    cursor: pointer;
+    position: absolute;
+    top: 6rem;
+    right: 1rem;
+    fill: $Red_Color;
+    width: 6rem;
+    transition: transform .3s ease;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+.svg__right-arrow{
+    width: 5rem;
+    fill: $Light_Color;
+}
