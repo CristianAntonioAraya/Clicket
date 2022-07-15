@@ -41,3 +41,17 @@
         }
     }
 }
+.executive__msg{
+    display: flex;
+    flex-direction: column;
+}
+.executive__number{
+    color: $Orange_Color;
+    font-size: $Medium_Font;
+    font-weight: bold;
+}
+.executive__desk-number{
+    color: $Green_Color;
+    font-size: $Medium_Font;
+    font-weight: bold;
+}

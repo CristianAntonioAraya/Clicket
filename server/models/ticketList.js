@@ -2,14 +2,15 @@ const Ticket = require('./ticket')
 
 class TicketList {
 
-    constructor() {
+    constructor () {
 
         this.lastName = 0;
 
         this.pending = [];
         this.asigned = [];
 
-    }
+    } 
+    
     get nextNumber () {
         this.lastName ++;
         return this.lastName;
@@ -26,19 +27,22 @@ class TicketList {
 
     }
 
-    assignTicket( executive, desk ){
-        if( this.pending === 0 ) return null;
+    assignTicket( name, desk ){
+
+
+        if( this.pending.length === 0 ) return null;
 
         const nextTicket = this.pending.shift();
-        nextTicket.executive = executive;
+
+        nextTicket.name = name;
         nextTicket.desk = desk;
+        
+        this.asigned.unshift( nextTicket );
 
-        this.assignTicket.unshift( nextTicket );
-
-        return this.assignTicket;
+        return nextTicket;
 
     }
 
 }
 
-module.export = TicketList;
+module.exports = TicketList;

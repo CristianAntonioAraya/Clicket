@@ -1,8 +1,11 @@
+import { SocketProvider } from "./context/SocketContext"
 import AppRoutes from "./routes/AppRoutes"
 
 const App = () => {
   return (
-    <AppRoutes/>
+    <SocketProvider>
+      <AppRoutes/>
+    </SocketProvider>
   )
 }
 

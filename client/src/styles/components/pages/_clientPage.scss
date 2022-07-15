@@ -10,9 +10,14 @@
         font-size: $Large_Font;
     }
 }
+.client__attend{
+    color: $Light_Color;
+    font-size: $Medium_Font;
+    margin-top: 2rem;
+}
 .client__btn{
     position: absolute;
-    top: 30%;
+    top: 35%;
     cursor: pointer;
     padding: 2rem;
     background-color: $Light_Color;

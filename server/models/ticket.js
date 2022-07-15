@@ -7,7 +7,7 @@ class Ticket {
         this.id = uuidv4();
         this.number = number;
         this.desk = null;
-        this.executive = null;
+        this.name = null;
     }
 
 

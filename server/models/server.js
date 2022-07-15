@@ -1,6 +1,7 @@
 const express = require('express')
 const http = require('http')
-const socketio = require('socket.io')
+const socketio = require('socket.io');
+const Sockets = require('./socket');
 
 
 class Server {
@@ -14,19 +15,29 @@ class Server {
 
         this.io = socketio( this.server )
 
-    }
-
-    socketConfig() {
+        const socketEvents = new Sockets( this.io );
 
     }
+    middlewares ( ) {
+        
+
+        this.app.get('/lastTickets', ( req, res )=> {
+            res.json({
+                ok: true,
+                ultimos: socketEvents.TicketList.lastTwenties
+            })
+        })
+
+    }
+
 
     execute() {
 
-        this.socketConfig()
+        this.middlewares();
 
         this.server.listen( this.port, () => {
             console.log(`Server running on port ${ this.port }`)
-        })
+        });
 
 
     }
