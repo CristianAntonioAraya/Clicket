@@ -2,6 +2,7 @@ const express = require('express')
 const http = require('http')
 const socketio = require('socket.io');
 const Sockets = require('./socket');
+const cors = require('cors')
 
 
 class Server {
@@ -15,16 +16,18 @@ class Server {
 
         this.io = socketio( this.server )
 
-        const socketEvents = new Sockets( this.io );
+        this.socketEvents = new Sockets( this.io );
 
     }
     middlewares ( ) {
         
+        this.app.use( cors() )
 
         this.app.get('/lastTickets', ( req, res )=> {
+
             res.json({
                 ok: true,
-                ultimos: socketEvents.TicketList.lastTwenties
+                lasts: this.socketEvents.ticketList.lastTwenties
             })
         })
 

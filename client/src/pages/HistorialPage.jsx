@@ -5,6 +5,7 @@ import { SocketContext } from '../context/SocketContext';
 import HistorialCard from '../components/icons/HistorialCard'
 import TableTitle from '../components/TableTitle'
 import HomeSvg from '../components/icons/HomeSvg';
+import { getLastTickets } from '../utils/getLastTickets';
 
 const HistorialPage = () => {
 
@@ -24,6 +25,13 @@ const HistorialPage = () => {
     }}
 
   }, [ socket ])
+
+  useEffect(() => {
+   
+    getLastTickets().then( setTickets )
+
+  }, [])
+  
   
 
   return (
@@ -33,6 +41,7 @@ const HistorialPage = () => {
             <TableTitle text='Attending Now'/>
             <div className='historial__list'>
               {
+                tickets &&
                 tickets.slice(0,5).map( ticket => (
                   <HistorialCard key={ ticket.number } name={ ticket.name } number={ ticket.number} desk={ ticket.desk } active={'Active'}/>
                 ))
@@ -44,6 +53,7 @@ const HistorialPage = () => {
             <TableTitle text='Historial'/>
             <div className='historial__list'>
               {
+                tickets &&
                  tickets.slice(5).map( ticket => (
                   <HistorialCard key={ ticket.number } name={ ticket.name } number={ ticket.number} desk={ ticket.desk } active={'Offline'}/>
                 ))
