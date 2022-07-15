@@ -1,0 +1,31 @@
+
+.home__link{
+    text-decoration: none;
+    color: $Light_Color;
+}
+.home__item{
+    width: fit-content;
+    font-size: $Large_Font;
+    margin: 1rem 0;
+    list-style: none;
+    border-bottom: 5px solid $Orange_Color;
+    cursor: pointer;
+    transition: all .3s ease;
+    &:hover{
+        transform: translateX(1rem);
+    }
+}
+.home__title{
+    color: $Light_Color;
+    opacity: .1;
+    position: absolute;
+    font-size: clamp( 90px, 15vw, 250px);
+    @include media-down( xs ) { 
+        bottom: 1rem;
+        right: 0rem; 
+    }
+    @include media-up( xs ) { 
+        bottom: 1rem;
+        right: 4rem;
+    }
+}

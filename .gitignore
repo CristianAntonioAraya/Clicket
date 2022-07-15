@@ -5,6 +5,7 @@
 /client/.pnp
 /client/.pnp.js
 
+
 # testing
 /client/coverage
 
@@ -18,6 +19,10 @@
 /client/.env.test.local
 /client/.env.production.local
 
+/server/node_modules
+/server/src/.env
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.gitignore

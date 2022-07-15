@@ -1,0 +1,17 @@
+.table__container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h3{
+        color: $Light_Color;
+        font-size: $Medium_Font;
+        min-width: max-content;
+    }
+}
+.table__line{
+    width: 100%;
+    margin: 0 1rem;
+    height: 4px;
+    background-color: $Orange_Color;
+}

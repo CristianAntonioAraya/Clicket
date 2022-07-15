@@ -1,0 +1,27 @@
+.card__container{
+    display: flex;
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    align-items: center;
+    background-color: $LightBlue_Color;
+    padding: 0.5rem 0;
+}
+.card__content{
+    display: flex;
+    span{
+        color: $Light_Color;
+        margin-right: 1rem;
+        font-size: 16px;
+    }
+}
+.card__number{
+    padding: 1rem;
+    font-size: $Small_Font;
+    color: $Light_Color;
+}
+.card__name{
+    margin: 0.5rem 0;
+    color: $Light_Color;
+    font-size: $Small_Font;
+}

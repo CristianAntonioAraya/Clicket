@@ -1,7 +1,11 @@
+import { SocketProvider } from "./context/SocketContext"
+import AppRoutes from "./routes/AppRoutes"
 
 const App = () => {
   return (
-    <div>Clicket</div>
+    <SocketProvider>
+      <AppRoutes/>
+    </SocketProvider>
   )
 }
 

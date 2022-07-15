@@ -1,0 +1,57 @@
+.executive__title{
+    color: $Light_Color;
+    font-size: $Xl_Font;
+    margin-top: 5rem;
+}
+.executive__desk{
+    color: $Light_Color;
+    font-size: $Medium_Font;
+}
+.executive__close-icon{
+    cursor: pointer;
+    margin-top: 2rem;
+    display: flex;
+    background-color: $Red_Color;
+    width: max-content;
+    padding: 1rem;
+    border-radius: 20px;
+}
+.executive__arrow-icon{
+    cursor: pointer;
+    display: flex;
+    margin: 10rem 0;
+    border: 5px solid $Light_Color;
+    width: max-content;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    span{
+        color: $Light_Color;
+        font-size: $Large_Font;
+        font-weight: bold;
+        margin-right: 0.5rem;
+    }
+    &:hover{
+        background-color: $Light_Color;
+        border-color: $Orange_Color;
+        span{
+            color: $Orange_Color;
+        }
+        svg{
+            fill: $Orange_Color;
+        }
+    }
+}
+.executive__msg{
+    display: flex;
+    flex-direction: column;
+}
+.executive__number{
+    color: $Orange_Color;
+    font-size: $Medium_Font;
+    font-weight: bold;
+}
+.executive__desk-number{
+    color: $Green_Color;
+    font-size: $Medium_Font;
+    font-weight: bold;
+}
